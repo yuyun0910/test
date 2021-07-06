@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.9.2 on win32)" generated="20210701 15:27:05.580" rpa="false" schemaversion="2">
+<suite id="s1" name="Test" source="C:\Users\SU - NB0142\test\test.robot">
+<test id="s1-t1" name="Login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://rc-webd.rctiplus.com/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210701 15:27:05.937" level="INFO">Opening browser 'chrome' to base url 'https://rc-webd.rctiplus.com/login'.</msg>
+<status status="PASS" starttime="20210701 15:27:05.937" endtime="20210701 15:27:12.473"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210701 15:27:12.474" endtime="20210701 15:27:12.640"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>id:username</arg>
+<arg>1</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20210701 15:27:12.641" endtime="20210701 15:27:12.692"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:username</arg>
+<arg>yuyunjoe529@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210701 15:27:12.693" level="INFO">Typing text 'yuyunjoe529@gmail.com' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20210701 15:27:12.693" endtime="20210701 15:27:12.872"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>yuyun0910</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210701 15:27:12.874" level="INFO">Typing text 'yuyun0910' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20210701 15:27:12.873" endtime="20210701 15:27:13.076"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:btnLogin</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 15:27:13.078" level="INFO">Clicking element 'id:btnLogin'.</msg>
+<status status="PASS" starttime="20210701 15:27:13.077" endtime="20210701 15:27:18.094"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath://a[contains(text(),'NEWS+')]</arg>
+<arg>1</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20210701 15:27:18.095" endtime="20210701 15:27:18.152"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="collapsingNavbar3"]/ul[1]/li[4]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 15:27:18.154" level="INFO">Clicking element '//*[@id="collapsingNavbar3"]/ul[1]/li[4]/a'.</msg>
+<status status="PASS" starttime="20210701 15:27:18.153" endtime="20210701 15:27:29.212"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>//*[@id="daily"]/div/div/div[1]/div/ul/div/div/div[2]/div/div/a/span</arg>
+<arg>1</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20210701 15:27:29.217" endtime="20210701 15:27:29.457"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="daily"]/div/div/div[1]/div/ul/div/div/div[2]/div/div/a/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 15:27:29.459" level="INFO">Clicking element '//*[@id="daily"]/div/div/div[1]/div/ul/div/div/div[2]/div/div/a/span'.</msg>
+<status status="PASS" starttime="20210701 15:27:29.458" endtime="20210701 15:27:33.624"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:keyword</arg>
+<arg>banjir</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210701 15:27:33.626" level="INFO">Typing text 'banjir' into text field 'id:keyword'.</msg>
+<status status="PASS" starttime="20210701 15:27:33.626" endtime="20210701 15:27:33.917"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>id:keyword</arg>
+<arg>Reload</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20210701 15:27:33.920" level="INFO">Sending key(s) ('Reload',) to id:keyword element.</msg>
+<msg timestamp="20210701 15:27:34.395" level="INFO">Sending keys Reload</msg>
+<status status="PASS" starttime="20210701 15:27:33.919" endtime="20210701 15:27:34.429"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>results for banjir</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210701 15:27:34.782" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210701 15:27:34.517" endtime="20210701 15:27:34.783"/>
+</kw>
+<msg timestamp="20210701 15:27:34.790" level="FAIL">NoSuchFrameException: Message: no such frame: element is not a frame
+  (Session info: chrome=91.0.4472.114)
+</msg>
+<status status="FAIL" starttime="20210701 15:27:34.430" endtime="20210701 15:27:34.790"/>
+</kw>
+<status status="FAIL" starttime="20210701 15:27:05.936" endtime="20210701 15:27:34.790">NoSuchFrameException: Message: no such frame: element is not a frame
+  (Session info: chrome=91.0.4472.114)
+</status>
+</test>
+<status status="FAIL" starttime="20210701 15:27:05.584" endtime="20210701 15:27:34.793"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
